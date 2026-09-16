@@ -1,4 +1,4 @@
-window.addEventListener('load',()=>{
+const factorPribylInit = () => {
 
 ;(function(){
 (function(){
@@ -409,4 +409,10 @@ function closeS(){ modal.classList.remove('open'); document.body.style.overflow=
   });
 })();
 
-});
+};
+
+if (document.readyState === 'loading') {
+  window.addEventListener('load', factorPribylInit, { once: true });
+} else {
+  factorPribylInit();
+}

@@ -396,7 +396,7 @@ function closeS(){ modal.classList.remove('open'); document.body.style.overflow=
       var f=document.createElement('iframe');
       f.src=src; f.loading='lazy';
       f.setAttribute('allow','autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;');
-      f.setAttribute('allowfullscreen',''); f.setAttribute('frameborder','0');
+      f.setAttribute('frameborder','0');
       box.innerHTML=''; box.appendChild(f);
       return;
     }
